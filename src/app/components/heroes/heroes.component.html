@@ -1,3 +1,22 @@
-<p>
-  heroes works!
-</p>
+<h1>SUPERHEROES</h1>
+<p>MARVEL AND DC</p>
+<hr>
+
+<div class="row card-deck">
+  <div class="col-md-4" *ngFor="let hero of heroes; let i = index">
+    <div class="card animated fadeIn fast">
+      <img class="card-img-top" [src]="hero.img" [alt]="hero.name">
+      <div class="card-body">
+        <h5 class="card-title">{{ hero.name }}</h5>
+        <p class="card-text">{{ (hero.bio.length>70)? (hero.bio | slice:0:70)+'...':(hero.bio) }}</p>
+        <p class="card-text"><small class="text-muted"><i class="far fa-calendar-alt"></i> {{ hero.emerged }}</small></p>
+
+        <button (click)="heroDetail(i)"
+          type="button" class="btn btn-outline-primary btn-block"><i class="fas fa-info-circle"></i> MORE INFO
+        </button>
+
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
