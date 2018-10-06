@@ -30,3 +30,12 @@ body {
 .fadeIn {
   animation-name: fadeIn;
 }
+
+.img-logo {
+  height: 70px;
+}
+
+.emerged {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
