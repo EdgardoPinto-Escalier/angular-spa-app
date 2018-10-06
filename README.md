@@ -14,3 +14,6 @@ This is a very simple single page application created using Angular.Here we show
 ## HOW TO INSTALL
 
 Please clone the whole repo and use `npm install`
+
+## DEMO
+[Angular SPA Application](http://angular-spa.web-projects.work)
