@@ -71,15 +71,15 @@ export class HeroesService {
     let heroesArray:Hero[] = [];
     term = term.toLowerCase();
     
-    for( let hero of this.heroes ) {
+    for( let i = 0; i < this.heroes.length; i ++ ) {
+      let hero = this.heroes[i];
       let name = hero.name.toLowerCase();
       if( name.indexOf( term ) >= 0 ) {
+        hero.idx = i;
         heroesArray.push( hero )
       }
     }
-    
     return heroesArray;
-
   }
 
 }
@@ -90,4 +90,5 @@ export interface Hero {
   img: string;
   emerged: string;
   house: string;
+  idx?: number;
 }
