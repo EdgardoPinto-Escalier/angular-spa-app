@@ -16,4 +16,4 @@ This is a very simple single page application created using Angular.Here we show
 Please clone the whole repo and use `npm install`
 
 ## DEMO
-[Angular SPA Application](http://angular-spa.web-projects.work)
+[Angular SPA Application](https://angular-spa-app.netlify.com)
